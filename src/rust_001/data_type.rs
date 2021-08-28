@@ -6,8 +6,17 @@
 pub fn data_type(){
 
     let guess:u32="12312".parse().expect("Not a number!");
+    println!("  guess is :{}",guess);
+
 
     let i:&str="sad";
-    println!("  guess is :{}",guess);
     println!("  cahr is :{}",i);
+    //元组
+    let tup:(i32,f64,u64)=(5000,3.1415,1000000);
+    let (x,y,z)=tup;
+    println!("tup is :{}",x);
+
+    //数组
+    let a:[i32;5]=[1,2,3,4,5];
+    
 }

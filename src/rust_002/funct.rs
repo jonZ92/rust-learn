@@ -3,6 +3,7 @@
  * @date 2021年08月28日
  */
 
-pub mod rust_001;
 
-pub mod rust_002;
+pub fn to_func(x:i32)->i32{
+    return x*5;
+}
