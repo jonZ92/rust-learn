@@ -40,10 +40,17 @@ fn main() {
 
 
     //引用 栈内存
-    let _num2 = "hello";
-    let _len2_ =rust_003::ownership::ownership2::test2(_num2);
-    println!("The value of :{}", _num2);
-    println!("The length of :{}", _len2_);//可以正常运行
+    // let _num2 = "hello";
+    // let _len2_ =rust_003::ownership::ownership2::test2(_num2);
+    // println!("The value of :{}", _num2);
+    // println!("The length of :{}", _len2_);//可以正常运行
+
+
+    //字符迭代题目
+    let mut _sd=String::from("hello world");
+    let word=rust_003::slice::slice_::first_word(&_sd);
+    _sd.clear();
+    println!("word  :{}",word);
 }
 
 
