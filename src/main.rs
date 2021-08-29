@@ -47,10 +47,15 @@ fn main() {
 
 
     //字符迭代题目
-    let mut _sd=String::from("hello world");
+    let  _sd=String::from("hello world");
     let word=rust_003::slice::slice_::first_word(&_sd);
-    _sd.clear();
+    //_sd.clear(); //清空
     println!("word  :{}",word);
+    //rust 切片
+    let _hello=&_sd[..5];
+    let _world=&_sd[6..];
+    println!("_hello  :{}",_hello);
+    println!("_world  :{}",_world);
 }
 
 
