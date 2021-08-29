@@ -3,6 +3,7 @@
  */
 
 pub mod _struct {
+    //想象成 c\c++ 结构体
     pub struct User {
         pub user_name: String,
         pub email: String,
