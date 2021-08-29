@@ -75,7 +75,7 @@ pub mod ownership1 {
 pub mod ownership2 {
     //引用 操作
     pub fn test(_stre:&String)->usize {
-        //_stre.push_str("sss"); //引用，只是使用，不可修改值
+        //_stre.push_str("sss"); //引用，只是使用，不可修改值，也可称为 借用，借过需要归还
         _stre.len()
     }
 
