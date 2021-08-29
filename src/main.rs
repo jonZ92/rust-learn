@@ -21,9 +21,29 @@ fn main() {
     //函数
     //let y:i32=rust_002::funct::to_func(5);
     //println!("y :{}",y);
-    rust_003::ownership::ownership1::test()
+
+    //所有权
+    //rust_003::ownership::ownership1::test()
+
+    //引用 堆内存
+    // let _st1 = String::from("hello jon");
+    // let _len_ = rust_003::ownership::ownership2::test(&_st1);
+    // println!("The value of :{}", _st1);//如果 不使用引用,_st1 所有权不存在了
+    // println!("The length of :{}", _len_);
+
+    // //引用 栈内存
+    // let _num1 = 515;
+    // let _len1_ =rust_003::ownership::ownership2::test1(_num1);
+    // println!("The value of :{}", _num1);
+    // println!("The length of :{}", _len1_);//栈上不存在,正常运行
 
 
+
+    //引用 栈内存
+    let _num2 = "hello";
+    let _len2_ =rust_003::ownership::ownership2::test2(_num2);
+    println!("The value of :{}", _num2);
+    println!("The length of :{}", _len2_);//可以正常运行
 }
 
 
