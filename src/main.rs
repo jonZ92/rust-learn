@@ -4,10 +4,12 @@
  */
 
 
+// #[warn(unused_imports)]
+// use rust_learn::rust_001;
+// #[warn(unused_imports)]
+// use rust_learn::rust_002;
 #[warn(unused_imports)]
-use rust_learn::rust_001;
-#[warn(unused_imports)]
-use rust_learn::rust_002;
+use rust_learn::rust_003;
 
 fn main() {
     //猜字游戏
@@ -17,8 +19,10 @@ fn main() {
     //数据类型
     //rust_001::data_type::data_type();
     //函数
-    // let y:i32=rust_002::funct::to_func(5);
-    // println!("y :{}",y);
+    //let y:i32=rust_002::funct::to_func(5);
+    //println!("y :{}",y);
+    rust_003::ownership::ownership1::test()
+
 
 }
 

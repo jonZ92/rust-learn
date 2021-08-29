@@ -13,10 +13,10 @@ pub fn data_type(){
     println!("  cahr is :{}",i);
     //元组
     let tup:(i32,f64,u64)=(5000,3.1415,1000000);
-    let (x,y,z)=tup;
-    println!("tup is :{}",x);
+    let (_x,_y,_z)=tup;
+    println!("tup is :{}",_x);
 
     //数组
-    let a:[i32;5]=[1,2,3,4,5];
+    let _a:[i32;5]=[1,2,3,4,5];
     
 }
