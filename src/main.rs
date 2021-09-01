@@ -72,6 +72,19 @@ fn main() {
     // println!("user_name:{}", _u1.user_name);
     // println!("active:{}", _u1.active);
     // println!("sign_in_count:{}", _u1.sign_in_count);
+
+    //结构体方法，_stru.area() 数字相乘方法
+    // let _stru=rust_004::_struct::_struct::Rectangle {
+    //     width: 32,
+    //     height: 23,
+    // };
+    // let _str_=rust_004::_struct::_struct::Rectangle{width: 60, height: 45};
+    // let _square=rust_004::_struct::_struct::Rectangle::square(123);
+    //
+    // println!("结构提方法调用:{}",_stru.area());
+    // println!("是否成立:{}",_stru.can_hold(&_str_));// 借用结构体对象
+    // println!("结构提方法调用:{}",_str_.height);
+    // println!("是否成立:{}",_stru.can_hold(&_square));
 }
 
 

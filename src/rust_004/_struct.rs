@@ -33,4 +33,44 @@ pub mod _struct {
             sign_in_count: 1000,
         }
     }
+
+
+    #[derive(Debug)]
+    pub struct Rectangle {
+        pub width: u32,
+        pub height: u32,
+    }
+
+    // IMPL 来定义 结构体方法,&self 感觉想 this 指针
+    impl Rectangle {
+        pub fn area(&self) -> u32 {
+            self.width * self.height
+        }
+        pub fn can_hold(&self, _other: &Rectangle) -> bool {
+            self.width > _other.width && self.height > _other.height
+        }
+    }
+
+    impl Rectangle {
+        /*
+         允许在 impl 块中定义 不 以 self 作为参数的函数。这被称为 关联函数,
+         因为它们与结构体相关联。它们仍是函数而不是方法，因为它们并不作用于一个结构体的实例。
+         */
+        pub fn square(_seiz: u32) -> Rectangle {
+            Rectangle { width: _seiz, height: _seiz }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
