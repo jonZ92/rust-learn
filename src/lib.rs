@@ -10,3 +10,5 @@ pub mod rust_002;
 pub mod rust_003;
 
 pub mod rust_004;
+
+pub mod rust_005;

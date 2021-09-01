@@ -13,9 +13,11 @@
 // #[warn(unused_imports)]
 // use rust_learn::rust_003;
 
-#[warn(unused_imports)]
-use rust_learn::rust_004;
+// #[warn(unused_imports)]
+// use rust_learn::rust_004;
 
+#[warn(unused_imports)]
+use rust_learn::rust_005;
 
 fn main() {
     //猜字游戏
@@ -85,6 +87,20 @@ fn main() {
     // println!("是否成立:{}",_stru.can_hold(&_str_));// 借用结构体对象
     // println!("结构提方法调用:{}",_str_.height);
     // println!("是否成立:{}",_stru.can_hold(&_square));
+
+
+    //枚举
+    let _v4=rust_005::_enum::IpAddrKind::V4;
+    let _v6=rust_005::_enum::IpAddrKind::V6;
+    println!("IP v4 协议");
+
+    let _cen=rust_005::_enum::Coin::Dime;
+    let _you_xi=rust_005::_enum::value_in_cents(_cen);
+    println!("枚举值:{}",_you_xi);
+
+    let _qurey_vs=rust_005::_enum::Coin::Quarter;
+    rust_005::_enum::_query_value(_qurey_vs);
+
 }
 
 
