@@ -16,8 +16,11 @@
 // #[warn(unused_imports)]
 // use rust_learn::rust_004;
 
+// #[warn(unused_imports)]
+// use rust_learn::rust_005;
+
 #[warn(unused_imports)]
-use rust_learn::rust_005;
+use rust_learn::rust_006;
 
 fn main() {
     //猜字游戏
@@ -90,16 +93,19 @@ fn main() {
 
 
     //枚举
-    let _v4=rust_005::_enum::IpAddrKind::V4;
-    let _v6=rust_005::_enum::IpAddrKind::V6;
-    println!("IP v4 协议");
+    // let _v4=rust_005::_enum::IpAddrKind::V4;
+    // let _v6=rust_005::_enum::IpAddrKind::V6;
+    // println!("IP v4 协议");
+    //
+    // let _cen=rust_005::_enum::Coin::Dime;
+    // let _you_xi=rust_005::_enum::value_in_cents(_cen);
+    // println!("枚举值:{}",_you_xi);
+    //
+    // let _qurey_vs=rust_005::_enum::Coin::Quarter;
+    // rust_005::_enum::_query_value(_qurey_vs);
 
-    let _cen=rust_005::_enum::Coin::Dime;
-    let _you_xi=rust_005::_enum::value_in_cents(_cen);
-    println!("枚举值:{}",_you_xi);
-
-    let _qurey_vs=rust_005::_enum::Coin::Quarter;
-    rust_005::_enum::_query_value(_qurey_vs);
+    //集合
+    rust_006::_aggregate::_vec::_vec();
 
 }
 
