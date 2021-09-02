@@ -4,6 +4,8 @@
 
 
 pub mod _vec{
+    use std::collections::HashMap;
+
     pub fn _vec(){
         let mut _v :Vec<i32>=Vec::new();
         _v.push(0);
@@ -36,6 +38,24 @@ pub mod _vec{
         println!("------------------");
 
         println!("hello  :{}", _ve[1]);
+
+        println!("----------------------------HashMap----------------------------");
+
+
+
+
+        let mut _scores = HashMap::new();
+
+        _scores.insert(String::from("Blue"), 10);
+        _scores.insert(String::from("Yellow"), 50);
+
+        for (key, value) in _scores{
+
+            println!("key {}, value {}", key, value);
+        }
+
+
+
 
     }
 }
