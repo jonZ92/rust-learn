@@ -14,3 +14,7 @@ pub mod rust_004;
 pub mod rust_005;
 
 pub mod rust_006;
+
+pub mod rust_007;
+
+pub mod rust_008;

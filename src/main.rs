@@ -19,8 +19,11 @@
 // #[warn(unused_imports)]
 // use rust_learn::rust_005;
 
+// #[warn(unused_imports)]
+// use rust_learn::rust_006;
+
 #[warn(unused_imports)]
-use rust_learn::rust_006;
+use rust_learn::rust_008::_generic::generic;
 
 fn main() {
     //猜字游戏
@@ -91,6 +94,8 @@ fn main() {
     // println!("结构提方法调用:{}",_str_.height);
     // println!("是否成立:{}",_stru.can_hold(&_square));
 
+    //泛型
+
 
     //枚举
     // let _v4=rust_005::_enum::IpAddrKind::V4;
@@ -105,8 +110,11 @@ fn main() {
     // rust_005::_enum::_query_value(_qurey_vs);
 
     //集合
-    rust_006::_aggregate::_vec::_vec();
-
+    //rust_006::_aggregate::_vec::_vec();
+    //泛型
+    let _v1=[13,2,45,4,5,26,15,8,77];
+    let _hv=generic::_max(&_v1);
+    println!(":{}",_hv);
 }
 
 
